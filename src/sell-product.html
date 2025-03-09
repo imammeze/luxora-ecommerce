@@ -58,6 +58,116 @@
         </div>
     </div>
 
+    <section class="px-6 pt-8">
+        <h2 class="text-center text-2xl font-bold">Jual barang disini!</h2>
+        <p class="w-[250px] mx-auto text-sm text-center py-2">Isi formulir dulu sebelum dipajang
+            di etalase kamu ya!</p>
+        <div class="border border-slate-300 p-6 my-4">
+            <p class="font-semibold text-sm">Filter Produk</p>
+            <form class="text-sm flex flex-col gap-2 pt-4" action="">
+                <div>
+                    <label class="font-semibold " for="nama">Kategori <span class="text-red-500">*</span></label>
+                    <div
+                        class="flex justify-between items-center w-full border border-slate-300 text-slate-300 p-2 my-1">
+                        <p class="">Pria, wanita, anak-anak</p>
+                        <img src="./assets/icon/arrow-right.svg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <label class="font-semibold " for="nama">Koleksi <span class="text-red-500">*</span></label>
+                    <div
+                        class="flex justify-between items-center w-full border border-slate-300 text-slate-300 p-2 my-1">
+                        <p class="">Pakaian, sepatu, aksesoris</p>
+                        <img src="./assets/icon/arrow-right.svg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <label class="font-semibold " for="nama">Jenis <span class="text-red-500">*</span></label>
+                    <div
+                        class="flex justify-between items-center w-full border border-slate-300 text-slate-300 p-2 my-1">
+                        <p class="">Pilih jenis produk</p>
+                        <img src="./assets/icon/arrow-right.svg" alt="">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <section class="px-6">
+        <div class="border border-slate-300 p-6 my-4">
+            <p class="font-semibold text-sm">Informasi Produk</p>
+            <form class="text-sm flex flex-col gap-2 pt-4" action="">
+                <div>
+                    <label class="font-semibold" for="nama">Brand roduk <span class="text-red-500">*</span></label>
+                    <input type="text" placeholder="Masukkan brand produk"
+                        class="w-full border border-slate-300 p-2 my-1">
+                </div>
+                <div>
+                    <label class="font-semibold" for="nama">Nama produk <span class="text-red-500">*</span></label>
+                    <input type="text" placeholder="Masukkan nama produk"
+                        class="w-full border border-slate-300 p-2 my-1">
+                </div>
+                <div>
+                    <label class="font-semibold" for="nama">Harga <span class="text-red-500">*</span></label>
+                    <input type="text" placeholder="Masukkan harga" class="w-full border border-slate-300 p-2 my-1">
+                </div>
+                <div>
+                    <label class="font-semibold " for="nama">Warna <span class="text-red-500">*</span></label>
+                    <div
+                        class="flex justify-between items-center w-full border border-slate-300 text-slate-300 p-2 my-1">
+                        <p class="">Pilih lebih dari 1 warna</p>
+                        <img src="./assets/icon/arrow-right.svg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <label class="font-semibold " for="nama">Ukuran <span class="text-red-500">*</span></label>
+                    <div
+                        class="flex justify-between items-center w-full border border-slate-300 text-slate-300 p-2 my-1">
+                        <p class="">Pilih ukuran produk</p>
+                        <img src="./assets/icon/arrow-right.svg" alt="">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="px-6">
+        <div class="border border-slate-300 p-6 my-4">
+            <p class="font-semibold text-sm">Informasi Produk</p>
+            <form class="text-sm flex flex-col gap-2 pt-4" action="">
+                <div>
+                    <label class="font-semibold" for="nama">Status <span class="text-red-500">*</span></label> <br>
+                    <div class="flex items-center gap-2 mt-1">
+                        <input type="checkbox" name="" id="">
+                        <p class="text-slate-500">Dijual</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <input type="checkbox" name="" id="">
+                        <p class="text-slate-500">Dapat ditukar</p>
+                    </div>
+                </div>
+                <div>
+                    <label class="font-semibold " for="nama">Kondisi <span class="text-red-500">*</span></label>
+                    <div
+                        class="flex justify-between items-center w-full border border-slate-300 text-slate-300 p-2 my-1">
+                        <p class="">Pilih kondisi produk sekarang</p>
+                        <img src="./assets/icon/arrow-right.svg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <label class="font-semibold " for="nama">Deskripsi <span class="text-red-500">*</span></label><br>
+                    <textarea class="w-full border border-slate-300 p-2 my-1 font-semibold text-slate-300"
+                        placeholder="Masukkan Deskripsi Produk" name="" id=""></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="flex items-center gap-4 py-4">
+            <button class="border p-2  w-1/2">Batal</button>
+            <button class="bg-black text-white p-2 w-1/2">Tambah ke etalase</button>
+        </div>
+    </section>
+
     <section class="py-8 px-6 bg-black text-white">
         <div>
             <h2 class="text-3xl font-bold pb-2">Luxora</h2>
@@ -103,6 +213,8 @@
             <p>©2025 Luxora, All Rights Reserved</p>
         </footer>
     </section>
+
+
 
     <script src="../index.js"></script>
 </body>
