@@ -8,9 +8,292 @@
 </head>
 
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+    <header class="px-6">
+        <div class="flex justify-between items-center">
+            <button id="hamburger" name="hamburger-menu">
+                <img src="./assets/icon/hamburger-menu.svg" alt="hamburger-menu">
+            </button>
+            <a href="index.html" class="font-bold text-2xl">Luxora</a>
+            <img src="./assets/icon/chart.svg" alt="chart">
+        </div>
+    </header>
+    <div id="nav-menu" class="absolute hidden bg-white z-99 w-full text-slate-500 font-semibold p-4">
+        <ul>
+            <li><a href="about.html">Cerita kami</a></li>
+        </ul>
+        <ul class="py-4">
+            <li class="pb-4"><a href="category.html">Koleksi</a></li>
+            <ul class="flex flex-col gap-2 pl-6">
+                <li><a href="./category.html">Pria</a></li>
+                <li><a href="">Wanita</a></li>
+                <li><a href="">Anak</a></li>
+            </ul>
+        </ul>
+        <ul>
+            <li><a href="contact.html">Kontak kami</a></li>
+        </ul>
+        <hr class="w-full border-t my-4 border-slate-500">
+        <div class="flex flex-col gap-4">
+            <div class="flex justify-between">
+                <div class="flex gap-3">
+                    <img src="./assets/icon/Magnifier.svg" alt="">
+                    <a href="">Cari produk</a>
+                </div>
+                <img src="./assets/icon/Arrow-Right-Up-black.png" alt="">
+            </div>
+            <div class="flex justify-between">
+                <div class="flex gap-3">
+                    <img src="./assets/icon/Bell.svg" alt="">
+                    <a href="">Notifikasi</a>
+                </div>
+                <img src="./assets/icon/Arrow-Right-Up-black.png" alt="">
+            </div>
+            <div class="flex justify-between">
+                <div class="flex gap-3">
+                    <img src="./assets/icon/Person.svg" alt="">
+                    <a href="profil.html">Profil</a>
+                </div>
+                <img src="./assets/icon/Arrow-Right-Up-black.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <section class="px-6 h-screen flex flex-col justify-center items-center bg-slate-200">
+        <div class="flex flex-col items-center gap-4">
+            <h2 class="font-bold text-3xl text-center">Upgrade Style, <br>Elevate Confidence</h2>
+            <p class="text-center font-semibold">Tampil lebih percaya diri dengan koleksi fashion yang sesuai dengan
+                karaktermu</p>
+            <a class="bg-black text-white px-8 py-2 font-bold" href="">Belanja Sekarang</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="py-14 px-6">
+        <div class="w-full flex flex-col items-center gap-4">
+            <h2 class="text-center text-2xl font-bold">Cerita kami</h2>
+            <img src="./assets/img/hero.png" alt="">
+            <p class="text-justify">Di dunia fashion yang terus berkembang, kami hadir sebagai platform inovatif yang
+                memungkinkanmu untuk
+                menjual, membeli,
+                dan menukar fashion item dengan mudah. Kami percaya bahwa fashion bukan sekadar gaya, tapi juga cara
+                untuk
+                mengekspresikan diri dan berbagi cerita di setiap pakaian yang dikenakan.</p>
+            <div class="flex justify-center bg-black w-full gap-2">
+                <a class=" text-white py-2 font-bold" href="about.html">Jelajahi</a>
+                <img class="text-white" src="./assets/icon/Arrow-Right-Up.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-7 px-6">
+        <div class="flex justify-between items-center pb-4">
+            <h2 class="font-bold text-2xl">Rekomendasi <br>buat kamu</h2>
+            <img class="bg-black p-3" src="./assets/icon/Arrow-Right-Up.svg" alt="">
+        </div>
+        <div class="flex items-center justify-between flex-wrap gap-2">
+            <div class="flex flex-col gap-1">
+                <img width="150" src="./assets/img/produk1.png" alt="">
+                <p class="text-xs font-semibold">Guci</p>
+                <p class="font-bold text-sm">Elegant Silk Blouse</p>
+                <p class="font-bold text-sm text-red-700">Rp350.000</p>
+            </div>
+            <div class="flex flex-col gap-1">
+                <img width="150" src="./assets/img/produk2.png" alt="">
+                <p class="text-xs font-semibold">Nike</p>
+                <p class="font-bold text-sm">Air Force 1</p>
+                <p class="font-bold text-sm text-red-700">Rp210.000</p>
+            </div>
+            <div class="flex flex-col gap-1">
+                <img width="150" src="./assets/img/produk3.png" alt="">
+                <p class="text-xs font-semibold">Adidas</p>
+                <p class="font-bold text-sm">Yeezy Boost 350 V2 <br>"Beluga"</p>
+                <p class="font-bold text-sm text-red-700">Rp480.000</p>
+            </div>
+            <div class="flex flex-col gap-1">
+                <img width="150" src="./assets/img/produk4.png" alt="">
+                <p class="text-xs font-semibold">Rolex</p>
+                <p class="font-bold text-sm">Oyster Perpetual</p>
+                <p class="font-bold text-sm text-red-700">Rp650.000</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-7 px-6">
+        <h2 class="text-center text-2xl font-bold pb-4">Cari berdasarkan <br>kategori</h2>
+        <div class="flex justify-center items-center gap-4 flex-wrap">
+            <div class="flex flex-col gap-2">
+                <img width="150" src="./assets/img/kategori1.png" alt="">
+                <div class="flex justify-center items-center gap-1">
+                    <p class="font-semibold">Pria</p>
+                    <img class="text-black" src="./assets/icon/Arrow-Right-Up-black.png" alt="">
+                </div>
+            </div>
+            <div class="flex flex-col gap-2">
+                <img width="150" src="./assets/img/kategori2.png" alt="">
+                <div class="flex justify-center  items-center gap-1">
+                    <p class="font-semibold">Wanita</p>
+                    <img class="text-black" src="./assets/icon/Arrow-Right-Up-black.png" alt="">
+                </div>
+            </div>
+            <div class="flex flex-col gap-2">
+                <img width="150" src="./assets/img/kategori3.png" alt="">
+                <div class="flex justify-center items-center gap-1">
+                    <p class="font-semibold">Anak</p>
+                    <img class="text-black" src="./assets/icon/Arrow-Right-Up-black.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-7 px-6">
+        <div>
+            <img src="./assets/img/etalase.png" alt="">
+            <p class="py-4 font-bold text-2xl text-justify">Ubah koleksi lamamu jadi cuan! Mulai jual barangmu hari ini.
+            </p>
+            <div class="flex justify-center bg-black w-full gap-2">
+                <a class=" text-white py-2 font-bold" href="">Jual Sekarang</a>
+                <img class="text-white" src="./assets/icon/Arrow-Right-Up.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-7 px-6">
+        <h2 class="text-center text-2xl font-bold pb-4">Frequently Asked <br> Questions</h2>
+        <div class="py-4">
+            <div class="flex justify-between items-center gap-4">
+                <p class="font-semibold text-sm w-3/4">Bagaimana cara menjual barang di <br> Luxora ?</p>
+                <img class="bg-black p-3" src="./assets/icon/plus.svg" alt="">
+            </div>
+            <br>
+            <p class="hidden text-sm text-justify pb-4">Cukup buat akun, unggah foto produk, tambahkan deskripsi dan
+                harga, lalu
+                publikasikan.
+                Pembeli atau
+                pengguna lain yang
+                tertarik dapat langsung menghubungi atau membeli produkmu.</p>
+            <hr class="w-full border-0 border-gray-100">
+        </div>
+        <div class="py-4">
+            <div class="flex justify-between items-center gap-4">
+                <p class="font-semibold text-sm w-3/4">Apa saja kondisi barang yang dapat dijual?</p>
+                <img class="bg-black p-3" src="./assets/icon/plus.svg" alt="">
+            </div>
+            <br>
+            <p class="hidden text-sm text-justify pb-4">Cukup buat akun, unggah foto produk, tambahkan deskripsi dan
+                harga, lalu
+                publikasikan.
+                Pembeli atau
+                pengguna lain yang
+                tertarik dapat langsung menghubungi atau membeli produkmu.</p>
+            <hr class="w-full border-0 border-gray-100">
+        </div>
+        <div class="py-4">
+            <div class="flex justify-between items-center gap-4">
+                <p class="font-semibold text-sm w-3/4">Apakah saya bisa menukar barang dengan pengguna lain?</p>
+                <img class="bg-black p-3" src="./assets/icon/plus.svg" alt="">
+            </div>
+            <br>
+            <p class="hidden text-sm text-justify pb-4">Cukup buat akun, unggah foto produk, tambahkan deskripsi dan
+                harga, lalu
+                publikasikan.
+                Pembeli atau
+                pengguna lain yang
+                tertarik dapat langsung menghubungi atau membeli produkmu.</p>
+            <hr class="w-full border-0 border-gray-100">
+        </div>
+        <div class="py-4">
+            <div class="flex justify-between items-center gap-4">
+                <p class="font-semibold text-sm w-3/4">Bagaimana sistem pembayaran di Luxora?</p>
+                <img class="bg-black p-3" src="./assets/icon/plus.svg" alt="">
+            </div>
+            <br>
+            <p class="hidden text-sm text-justify pb-4">Cukup buat akun, unggah foto produk, tambahkan deskripsi dan
+                harga, lalu
+                publikasikan.
+                Pembeli atau
+                pengguna lain yang
+                tertarik dapat langsung menghubungi atau membeli produkmu.</p>
+            <hr class="w-full border-0 border-gray-100">
+        </div>
+        <div class="py-4">
+            <div class="flex justify-between items-center gap-4">
+                <p class="font-semibold text-sm w-3/4">Apakah saya bisa menghapus atau mengedit produk yang sudah
+                    diposting?</p>
+                <img class="bg-black p-3" src="./assets/icon/plus.svg" alt="">
+            </div>
+            <br>
+            <p class="hidden text-sm text-justify pb-4">Cukup buat akun, unggah foto produk, tambahkan deskripsi dan
+                harga, lalu
+                publikasikan.
+                Pembeli atau
+                pengguna lain yang
+                tertarik dapat langsung menghubungi atau membeli produkmu.</p>
+            <hr class="w-full border-0 border-gray-100">
+        </div>
+        <div class="py-4">
+            <div class="flex justify-between items-center gap-4">
+                <p class="font-semibold text-sm w-3/4">Bagaimana cara meningkatkan peluang barang saya terjual lebih
+                    cepat?</p>
+                <img class="bg-black p-3" src="./assets/icon/plus.svg" alt="">
+            </div>
+            <br>
+            <p class="hidden text-sm text-justify pb-4">Cukup buat akun, unggah foto produk, tambahkan deskripsi dan
+                harga, lalu
+                publikasikan.
+                Pembeli atau
+                pengguna lain yang
+                tertarik dapat langsung menghubungi atau membeli produkmu.</p>
+            <hr class="w-full border-0 border-gray-100">
+        </div>
+    </section>
+
+    <section class="py-8 px-6 bg-black text-white">
+        <div>
+            <h2 class="text-3xl font-bold pb-2">Luxora</h2>
+            <p class="font-semibold text-slate-500 text-sm">Upgrade Style, Elevate Confidence.</p>
+        </div>
+        <div class="text-sm flex flex-col gap-4 pt-8">
+            <p>Newsletter</p>
+            <p class="text-slate-500">Dapatkan pemberitahuan diskon dari kami!</p>
+            <form action="">
+                <input type="text" placeholder="Masukkan email anda" class="w-full border border-gray-500 p-2">
+                <button class="bg-white text-black p-2 mt-8 font-semibold px-6">Subscribe</button>
+            </form>
+        </div>
+        <div class="flex justify-between py-8 text-sm">
+            <div class="flex flex-col gap-4">
+                <p class="font-semibold text-sm"><a href="">Kategori</a></p>
+                <p class="text-slate-500"><a href="">Pria</a></p>
+                <p class="text-slate-500"><a href="">Wanita</a></p>
+                <p class="text-slate-500"><a href="">Anak</a></p>
+            </div>
+            <div class="flex flex-col gap-4">
+                <p class="font-semibold text-sm"><a href="">Koleksi</a></p>
+                <p class="text-slate-500"><a href="">Rekomendasi</a></p>
+                <p class="text-slate-500"><a href="">Pakaian</a></p>
+                <p class="text-slate-500"><a href="">Sepatu</a></p>
+                <p class="text-slate-500"><a href="">Aksesoris</a></p>
+            </div>
+            <div class="flex flex-col gap-4">
+                <p class="font-semibold text-sm"><a href="">Ikuti Kami</a></p>
+                <p class="text-slate-500"><a href="">Instagram</a></p>
+                <p class="text-slate-500"><a href="">Facebook</a></p>
+                <p class="text-slate-500"><a href="">Youtube</a></p>
+                <p class="text-slate-500"><a href="">Tiktok</a></p>
+            </div>
+        </div>
+        <hr class="w-full border border-gray-500">
+        <div class="flex flex-col text-slate-500 gap-4 pt-4 text-sm">
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+            <p>Cookie Policy</p>
+        </div>
+        <footer class="text-sm text-slate-500 pt-8">
+            <p>©2025 Luxora, All Rights Reserved</p>
+        </footer>
+    </section>
+
+    <script src="../index.js"></script>
 </body>
 
 </html>
