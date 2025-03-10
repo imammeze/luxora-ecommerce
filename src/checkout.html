@@ -5,356 +5,393 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header class="px-6">
-        <div class="flex justify-between items-center">
-            <button id="hamburger" name="hamburger-menu">
-                <img src="./assets/icon/hamburger-menu.svg" alt="hamburger-menu">
-            </button>
-            <a href="index.html" class="font-bold text-2xl">Luxora</a>
-            <img src="./assets/icon/chart.svg" alt="chart">
+    <header class="px-6 lg:px-16">
+        <div class="flex justify-between items-center p-4">
+            <div>
+                <button class="block lg:hidden" id="hamburger" name="hamburger-menu">
+                    <img src="./assets/icon/hamburger-menu.svg" alt="hamburger-menu">
+                </button>
+            </div>
+            <div>
+                <a href="index.html" class="font-bold text-2xl">Luxora</a>
+            </div>
+            <div>
+                <a href="chart.html"><img src="./assets/icon/chart.svg" alt="chart"></a>
+            </div>
+        </div>
+        <div id="nav-menu"
+            class="hidden lg:absolute lg:top-0 lg:mt-3 lg:w-fit lg:flex lg:gap-6 lg:items-center bg-white z-99 w-full text-slate-500 font-semibold p-4">
+            <ul>
+                <li><a href="about.html">Cerita kami</a></li>
+            </ul>
+            <ul class="py-4 lg:py-0">
+                <li class="pb-4 lg:pb-0"><a href="category.html">Koleksi</a></li>
+                <ul class="flex flex-col gap-2 pl-6 lg:hidden">
+                    <li><a href="./category.html">Pria</a></li>
+                    <li><a href="">Wanita</a></li>
+                    <li><a href="">Anak</a></li>
+                </ul>
+            </ul>
+            <ul>
+                <li><a href="contact.html">Kontak kami</a></li>
+            </ul>
+            <hr class="w-full border-t my-4 border-slate-500 lg:hidden">
+            <div class="flex flex-col gap-4 lg:hidden">
+                <div class="flex justify-between">
+                    <div class="flex gap-3">
+                        <img src="./assets/icon/Magnifier.svg" alt="">
+                        <a href="">Cari produk</a>
+                    </div>
+                    <img src="./assets/icon/Arrow-Right-Up-black.png" alt="">
+                </div>
+                <div class="flex justify-between">
+                    <div class="flex gap-3">
+                        <img src="./assets/icon/Bell.svg" alt="">
+                        <a href="">Notifikasi</a>
+                    </div>
+                    <img src="./assets/icon/Arrow-Right-Up-black.png" alt="">
+                </div>
+                <div class="flex justify-between">
+                    <div class="flex gap-3">
+                        <img src="./assets/icon/Person.svg" alt="">
+                        <a href="profil.html">Profil</a>
+                    </div>
+                    <img src="./assets/icon/Arrow-Right-Up-black.png" alt="">
+                </div>
+            </div>
         </div>
     </header>
-    <div id="nav-menu" class="absolute hidden bg-white z-99 w-full text-slate-500 font-semibold p-4">
-        <ul>
-            <li><a href="about.html">Cerita kami</a></li>
-        </ul>
-        <ul class="py-4">
-            <li class="pb-4"><a href="category.html">Koleksi</a></li>
-            <ul class="flex flex-col gap-2 pl-6">
-                <li><a href="./category.html">Pria</a></li>
-                <li><a href="">Wanita</a></li>
-                <li><a href="">Anak</a></li>
-            </ul>
-        </ul>
-        <ul>
-            <li><a href="contact.html">Kontak kami</a></li>
-        </ul>
-        <hr class="w-full border-t my-4 border-slate-500">
-        <div class="flex flex-col gap-4">
-            <div class="flex justify-between">
-                <div class="flex gap-3">
-                    <img src="./assets/icon/Magnifier.svg" alt="">
-                    <a href="">Cari produk</a>
-                </div>
-                <img src="./assets/icon/Arrow-Right-Up-black.png" alt="">
-            </div>
-            <div class="flex justify-between">
-                <div class="flex gap-3">
-                    <img src="./assets/icon/Bell.svg" alt="">
-                    <a href="">Notifikasi</a>
-                </div>
-                <img src="./assets/icon/Arrow-Right-Up-black.png" alt="">
-            </div>
-            <div class="flex justify-between">
-                <div class="flex gap-3">
-                    <img src="./assets/icon/Person.svg" alt="">
-                    <a href="profil.html">Profil</a>
-                </div>
-                <img src="./assets/icon/Arrow-Right-Up-black.png" alt="">
-            </div>
-        </div>
-    </div>
 
-    <section class="py-7 px-6 ">
+    <section class="py-7 px-6 lg:px-16">
         <h2 class="text-center text-2xl font-bold mb-1">Checkout</h2>
-        <p class="text-sm text-center text-slate-500">Isi formulir pengiriman dengan benar ya!</p>
-        <!-- informasi pesanan -->
-        <div class="border border-slate-300 p-6 my-8">
-            <p class="font-semibold text-sm">Informasi Pesanan</p>
-            <div class="flex items-center gap-4 my-3">
-                <div class="flex items-center gap-3">
-                    <input type="radio" name="" id="">
-                    <label class="text-sm" for="">Input baru</label>
-                </div>
-                <div class="flex items-center gap-3">
-                    <input type="radio" name="" id="">
-                    <label class="text-sm" for="">Gunakan akun saya</label>
-                </div>
-            </div>
-            <form class="text-sm font-semibold flex flex-col gap-2 py-2" action="">
-                <div>
-                    <label for="nama">Nama Depan</label>
-                    <input type="text" placeholder="Jhon" class="w-full border border-slate-300 p-2 my-1">
-                </div>
-                <div>
-                    <label for="nama">Nama Belakang</label>
-                    <input type="text" placeholder="Doe" class="w-full border border-slate-300 p-2 my-1">
-                </div>
-                <div>
-                    <label for="nama">Email</label>
-                    <input type="text" placeholder="jhondoe@gmail.com" class="w-full border border-slate-300 p-2 my-1">
-                </div>
-                <div>
-                    <label for="nama">Nomor HP</label>
-                    <input type="text" placeholder="08xx-xxxx-xxxx" class="w-full border border-slate-300 p-2 my-1">
-                </div>
-            </form>
-        </div>
-        <!-- alamat pengiriman -->
-        <div class="border border-slate-300 p-6 my-8">
-            <div class="flex items-center justify-between mb-4">
-                <p class="font-semibold text-sm">Alamat Pengiriman</p>
-                <div class="flex items-center gap-3 border px-2 py-1.5">
-                    <img src="./assets/icon/alamat.svg" alt="">
-                    <a class="text-sm " href="">Alamat Saya</a>
-                </div>
-            </div>
-            <form class="text-sm font-semibold flex flex-col gap-2 py-2" action="">
-                <div>
-                    <label for="">Provinsi</label>
-                    <input type="text" placeholder="Jawa Tengah" class="w-full border border-slate-300 p-2 my-1">
-                </div>
-                <div>
-                    <label for="">Kabupaten/Kota</label>
-                    <input type="text" placeholder="Banyumas" class="w-full border border-slate-300 p-2 my-1">
-                </div>
-                <div>
-                    <label for="">Kecamatan</label>
-                    <input type="text" placeholder="Purwokerto" class="w-full border border-slate-300 p-2 my-1">
-                </div>
-                <div>
-                    <label for="">Kode Pos</label>
-                    <input type="text" placeholder="xxxx" class="w-full border border-slate-300 p-2 my-1">
-                </div>
-                <div>
-                    <label for="">Alamat</label>
-                    <textarea name="" id="" placeholder="Masukkan alamat lengkap"
-                        class="w-full border border-slate-300 p-2 my-1"></textarea>
-                </div>
-                <div class="flex items-center gap-3 mt-4">
-                    <input type="checkbox" name="" id="">
-                    <p class="font-semibold text-sm">Simpan alamat ini untuk kedepannya</p>
-                </div>
-            </form>
-        </div>
-        <!-- Metode pengiriman -->
-        <div class="border border-slate-300 p-6 my-8">
-            <p class="font-semibold text-sm">Metode Pengiriman</p>
-            <div class="flex flex-col items-center gap-6 my-4">
-                <div class="flex justify-between items-center w-full">
-                    <input type="radio" name="" id="">
-                    <div class="text-sm">
-                        <label class="font-semibold" for="">J&T Express</label>
-                        <p class="text-xs">Estimasi pengiriman 2-3 hari</p>
-                    </div>
-                    <p class="text-sm font-semibold">Rp15.500</p>
-                </div>
-                <div class="flex justify-between items-center w-full">
-                    <input type="radio" name="" id="">
-                    <div class="text-sm">
-                        <label class="font-semibold" for="">J&T Kargo</label>
-                        <p class="text-xs">Estimasi pengiriman 6-7 hari</p>
-                    </div>
-                    <p class="text-sm font-semibold">Rp21.000</p>
-                </div>
-                <div class="flex justify-between items-center w-full">
-                    <input type="radio" name="" id="">
-                    <div class="text-sm">
-                        <label class="font-semibold" for="">JNE</label>
-                        <p class="text-xs">Estimasi pengiriman 3-4 hari</p>
-                    </div>
-                    <p class="text-sm font-semibold">Rp14.000</p>
-                </div>
-                <div class="flex justify-between items-center w-full">
-                    <input type="radio" name="" id="">
-                    <div class="text-sm">
-                        <label class="font-semibold" for="">Sicepat</label>
-                        <p class="text-xs">Estimasi pengiriman 2-3 hari</p>
-                    </div>
-                    <p class="text-sm font-semibold">Rp17.000</p>
-                </div>
-                <div class="flex justify-between items-center w-full">
-                    <input type="radio" name="" id="">
-                    <div class="text-sm">
-                        <label class="font-semibold" for="">Ninja Express</label>
-                        <p class="text-xs">Estimasi pengiriman 4-5 hari</p>
-                    </div>
-                    <p class="text-sm font-semibold">Rp16.500</p>
-                </div>
-            </div>
-        </div>
-        <!-- Metode pembayaran -->
-        <div class="border border-slate-300 p-6 my-8">
-            <p class="font-semibold text-sm">Metode Pembayaran</p>
-            <div class="flex flex-col items-center gap-8 my-4">
-                <div class="flex justify-between items-center w-full">
-                    <div class="flex items-center gap-4">
-                        <input type="radio" name="" id="">
-                        <div class="text-sm">
-                            <label class="font-semibold" for="">Cash on Delivery</label>
-                            <p class="text-xs">Bayar tunai di rumah</p>
+        <p class="text-sm lg:text-base text-center text-slate-500">Isi formulir pengiriman dengan benar ya!</p>
+        <div class="lg:flex lg:justify-center lg:gap-6">
+            <div>
+                <!-- informasi pesanan -->
+                <div class="border border-slate-300 p-6 my-8 lg:w-[500px]">
+                    <p class="font-semibold text-sm lg:text-base">Informasi Pesanan</p>
+                    <div class="flex items-center gap-4 my-3">
+                        <div class="flex items-center gap-3">
+                            <input type="radio" name="" id="">
+                            <label class="text-sm lg:text-base" for="">Input baru</label>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <input type="radio" name="" id="">
+                            <label class="text-sm lg:text-base" for="">Gunakan akun saya</label>
                         </div>
                     </div>
-                    <p class="text-sm font-bold">COD</p>
+                    <form class="text-sm lg:text-base flex flex-col gap-2 py-2" action="">
+                        <div>
+                            <label class="font-semibold" for="nama">Nama Depan</label>
+                            <input type="text" placeholder="Jhon" class="w-full border border-slate-300 p-2 my-1">
+                        </div>
+                        <div>
+                            <label class="font-semibold" for="nama">Nama Belakang</label>
+                            <input type="text" placeholder="Doe" class="w-full border border-slate-300 p-2 my-1">
+                        </div>
+                        <div>
+                            <label class="font-semibold" for="nama">Email</label>
+                            <input type="text" placeholder="jhondoe@gmail.com"
+                                class="w-full border border-slate-300 p-2 my-1">
+                        </div>
+                        <div>
+                            <label class="font-semibold" for="nama">Nomor HP</label>
+                            <input type="text" placeholder="08xx-xxxx-xxxx"
+                                class="w-full border border-slate-300 p-2 my-1">
+                        </div>
+                    </form>
                 </div>
-                <div class="flex justify-between items-center w-full">
-                    <div class="flex items-center gap-4">
-                        <input type="radio" name="" id="">
-
-                        <label class="font-semibold text-sm" for="">BRI Virtual Account</label>
+                <!-- alamat pengiriman -->
+                <div class="border border-slate-300 p-6 my-8 lg:w-[500px]">
+                    <div class="flex items-center justify-between mb-4">
+                        <p class="font-semibold text-sm lg:text-base">Alamat Pengiriman</p>
+                        <div class="flex items-center gap-3 border px-2 py-1.5">
+                            <img src="./assets/icon/alamat.svg" alt="">
+                            <a class="text-sm lg:text-base " href="">Alamat Saya</a>
+                        </div>
                     </div>
-                    <img src="./assets/img/bri.png" alt="">
+                    <form class="text-sm lg:text-base flex flex-col gap-2 py-2" action="">
+                        <div>
+                            <label class="font-semibold" for="">Provinsi</label>
+                            <input type="text" placeholder="Jawa Tengah"
+                                class="w-full border border-slate-300 p-2 my-1">
+                        </div>
+                        <div>
+                            <label class="font-semibold" for="">Kabupaten/Kota</label>
+                            <input type="text" placeholder="Banyumas" class="w-full border border-slate-300 p-2 my-1">
+                        </div>
+                        <div>
+                            <label class="font-semibold" for="">Kecamatan</label>
+                            <input type="text" placeholder="Purwokerto" class="w-full border border-slate-300 p-2 my-1">
+                        </div>
+                        <div>
+                            <label class="font-semibold" for="">Kode Pos</label>
+                            <input type="text" placeholder="xxxx" class="w-full border border-slate-300 p-2 my-1">
+                        </div>
+                        <div>
+                            <label class="font-semibold" for="">Alamat</label>
+                            <textarea name="" id="" placeholder="Masukkan alamat lengkap"
+                                class="w-full border border-slate-300 p-2 my-1"></textarea>
+                        </div>
+                        <div class="flex items-center gap-3 mt-4">
+                            <input type="checkbox" name="" id="">
+                            <p class="font-semibold text-sm lg:text-base">Simpan alamat ini untuk kedepannya</p>
+                        </div>
+                    </form>
                 </div>
-                <div class="flex justify-between items-center w-full">
-                    <div class="flex items-center gap-4">
-                        <input type="radio" name="" id="">
-
-                        <label class="font-semibold text-sm" for="">BNI Virtual Account</label>
+                <!-- Metode pengiriman -->
+                <div class="border border-slate-300 p-6 my-8 lg:w-[500px]">
+                    <p class="font-semibold text-sm lg:text-base">Metode Pengiriman</p>
+                    <div class="flex flex-col items-center gap-6 my-4">
+                        <div class="flex justify-between items-center w-full">
+                            <div class="flex lg:items-center lg:gap-6 gap-3">
+                                <input type="radio" name="" id="">
+                                <div class="text-sm lg:text-base">
+                                    <label class="font-semibold" for="">J&T Express</label>
+                                    <p class="text-xs">Estimasi pengiriman 2-3 hari</p>
+                                </div>
+                            </div>
+                            <p class="text-sm lg:text-base font-semibold">Rp15.500</p>
+                        </div>
+                        <div class="flex justify-between items-center w-full">
+                            <div class="flex lg:items-center lg:gap-6 gap-3">
+                                <input type="radio" name="" id="">
+                                <div class="text-sm lg:text-base">
+                                    <label class="font-semibold" for="">J&T Kargo</label>
+                                    <p class="text-xs">Estimasi pengiriman 6-7 hari</p>
+                                </div>
+                            </div>
+                            <p class="text-sm lg:text-base font-semibold">Rp21.000</p>
+                        </div>
+                        <div class="flex justify-between items-center w-full">
+                            <div class="flex lg:items-center lg:gap-6 gap-3">
+                                <input type="radio" name="" id="">
+                                <div class="text-sm lg:text-base">
+                                    <label class="font-semibold" for="">JNE</label>
+                                    <p class="text-xs">Estimasi pengiriman 3-4 hari</p>
+                                </div>
+                            </div>
+                            <p class="text-sm lg:text-base font-semibold">Rp14.000</p>
+                        </div>
+                        <div class="flex justify-between items-center w-full">
+                            <div class="flex lg:items-center lg:gap-6 gap-3">
+                                <input type="radio" name="" id="">
+                                <div class="text-sm lg:text-base">
+                                    <label class="font-semibold" for="">Sicepat</label>
+                                    <p class="text-xs">Estimasi pengiriman 2-3 hari</p>
+                                </div>
+                            </div>
+                            <p class="text-sm lg:text-base font-semibold">Rp17.000</p>
+                        </div>
+                        <div class="flex justify-between items-center w-full">
+                            <div class="flex lg:items-center lg:gap-6 gap-3">
+                                <input type="radio" name="" id="">
+                                <div class="text-sm lg:text-base">
+                                    <label class="font-semibold" for="">Ninja Express</label>
+                                    <p class="text-xs">Estimasi pengiriman 4-5 hari</p>
+                                </div>
+                            </div>
+                            <p class="text-sm lg:text-base font-semibold">Rp16.500</p>
+                        </div>
                     </div>
-                    <img src="./assets/img/bni.png" alt="">
                 </div>
-                <div class="flex justify-between items-center w-full">
-                    <div class="flex items-center gap-4">
-                        <input type="radio" name="" id="">
+                <!-- Metode pembayaran -->
+                <div class="border border-slate-300 p-6 my-8 lg:w-[500px]">
+                    <p class="font-semibold text-sm">Metode Pembayaran</p>
+                    <div class="flex flex-col items-center gap-8 my-4">
+                        <div class="flex justify-between items-center w-full">
+                            <div class="flex items-center gap-4">
+                                <input type="radio" name="" id="">
+                                <div class="text-sm">
+                                    <label class="font-semibold" for="">Cash on Delivery</label>
+                                    <p class="text-xs">Bayar tunai di rumah</p>
+                                </div>
+                            </div>
+                            <p class="text-sm font-bold">COD</p>
+                        </div>
+                        <div class="flex justify-between items-center w-full">
+                            <div class="flex items-center gap-4">
+                                <input type="radio" name="" id="">
 
-                        <label class="font-semibold text-sm" for="">Mandiri Virtual Account</label>
+                                <label class="font-semibold text-sm" for="">BRI Virtual Account</label>
+                            </div>
+                            <img src="./assets/img/bri.png" alt="">
+                        </div>
+                        <div class="flex justify-between items-center w-full">
+                            <div class="flex items-center gap-4">
+                                <input type="radio" name="" id="">
+
+                                <label class="font-semibold text-sm" for="">BNI Virtual Account</label>
+                            </div>
+                            <img src="./assets/img/bni.png" alt="">
+                        </div>
+                        <div class="flex justify-between items-center w-full">
+                            <div class="flex items-center gap-4">
+                                <input type="radio" name="" id="">
+
+                                <label class="font-semibold text-sm" for="">Mandiri Virtual Account</label>
+                            </div>
+                            <img src="./assets/img/mandiri.png" alt="">
+                        </div>
+                        <div class="flex justify-between items-center w-full">
+                            <div class="flex items-center gap-4">
+                                <input type="radio" name="" id="">
+
+                                <label class="font-semibold text-sm" for="">Gopay</label>
+                            </div>
+                            <img src="./assets/img/gopay.png" alt="">
+                        </div>
+                        <div class="flex justify-between items-center w-full">
+                            <div class="flex items-center gap-4">
+                                <input type="radio" name="" id="">
+
+                                <label class="font-semibold text-sm" for="">OVO</label>
+                            </div>
+                            <img width="80" src="./assets/img/ovo.png" alt="">
+                        </div>
+                        <div class="flex justify-between items-center w-full">
+                            <div class="flex items-center gap-4">
+                                <input type="radio" name="" id="">
+
+                                <label class="font-semibold text-sm" for="">ShopeePay</label>
+                            </div>
+                            <img src="./assets/img/shoppe.png" alt="">
+                        </div>
+                        <div class="flex justify-between items-center w-full">
+                            <div class="flex items-center gap-4">
+                                <input type="radio" name="" id="">
+
+                                <label class="font-semibold text-sm" for="">Dana</label>
+                            </div>
+                            <img src="./assets/img/dana.png" alt="">
+                        </div>
+                        <div class="flex justify-between items-center w-full">
+                            <div class="flex items-center gap-4">
+                                <input type="radio" name="" id="">
+
+                                <label class="font-semibold text-sm" for="">Alfamart</label>
+                            </div>
+                            <img src="./assets/img/mandiri.png" alt="">
+                        </div>
+                        <div class="flex justify-between items-center w-full">
+                            <div class="flex items-center gap-4">
+                                <input type="radio" name="" id="">
+
+                                <label class="font-semibold text-sm" for="">Indomart</label>
+                            </div>
+                            <img src="./assets/img/indomart.png" alt="">
+                        </div>
                     </div>
-                    <img src="./assets/img/mandiri.png" alt="">
                 </div>
-                <div class="flex justify-between items-center w-full">
-                    <div class="flex items-center gap-4">
-                        <input type="radio" name="" id="">
-
-                        <label class="font-semibold text-sm" for="">Gopay</label>
+            </div>
+            <!-- Pesanan -->
+            <div>
+                <div class="border border-slate-300 py-4 px-6 my-8 lg:w-[500px]">
+                    <p class="font-semibold text-sm">Pesanan kamu</p>
+                    <div class="flex justify-between items-center">
+                        <p class="text-xs lg:text-sm py-3">ID Pesanan</p>
+                        <p class="font-semibold text-xs lg:text-sm">#A37SDB61XVXZ13DR</p>
                     </div>
-                    <img src="./assets/img/gopay.png" alt="">
-                </div>
-                <div class="flex justify-between items-center w-full">
-                    <div class="flex items-center gap-4">
-                        <input type="radio" name="" id="">
-
-                        <label class="font-semibold text-sm" for="">OVO</label>
+                    <div class="flex items-start gap-3">
+                        <div class="flex gap-4">
+                            <img width="100" class="h-fit" src="./assets/img/produk3.png" alt="">
+                            <div class="flex flex-col gap-2">
+                                <p class="text-xs lg:text-sm font-semibold">Adidas</p>
+                                <p class="font-bold text-xs lg:text-sm">Yeezy Boost 350 V2 "Beluga"</p>
+                                <p class="font-bold text-sm text-red-700">Rp480.000</p>
+                                <p class="text-sm">Warna : Black</p>
+                                <p class=" text-sm">Ukuran : 42</p>
+                            </div>
+                        </div>
                     </div>
-                    <img width="80" src="./assets/img/ovo.png" alt="">
-                </div>
-                <div class="flex justify-between items-center w-full">
-                    <div class="flex items-center gap-4">
-                        <input type="radio" name="" id="">
-
-                        <label class="font-semibold text-sm" for="">ShopeePay</label>
+                    <div class="flex flex-col gap-2 mt-2">
+                        <div class="flex justify-between">
+                            <p class="text-sm text-slate-500">Subtotal Harga</p>
+                            <p class="text-sm font-semibold">Rp480.000</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p class="text-sm text-slate-500">Diskon</p>
+                            <p class="text-sm font-semibold">Rp0</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p class="text-sm text-slate-500">Pengiriman</p>
+                            <p class="text-sm font-semibold">Rp15.500</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p class="text-sm text-slate-500">Biaya lainya</p>
+                            <p class="text-sm font-semibold">Rp2000</p>
+                        </div>
+                        <hr class="w-full border border-gray-300 mt-2">
+                        <div class="flex justify-between">
+                            <p class="text-sm text-slate-500">Total Pembayaran</p>
+                            <p class="text-sm font-semibold">Rp480.000</p>
+                        </div>
+                        <button class="bg-black text-white p-2 mt-4 w-full">Buat Pesanan</button>
+                        <button class="border p-2  w-full">Kembali</button>
                     </div>
-                    <img src="./assets/img/shoppe.png" alt="">
-                </div>
-                <div class="flex justify-between items-center w-full">
-                    <div class="flex items-center gap-4">
-                        <input type="radio" name="" id="">
-
-                        <label class="font-semibold text-sm" for="">Dana</label>
-                    </div>
-                    <img src="./assets/img/dana.png" alt="">
-                </div>
-                <div class="flex justify-between items-center w-full">
-                    <div class="flex items-center gap-4">
-                        <input type="radio" name="" id="">
-
-                        <label class="font-semibold text-sm" for="">Alfamart</label>
-                    </div>
-                    <img src="./assets/img/mandiri.png" alt="">
-                </div>
-                <div class="flex justify-between items-center w-full">
-                    <div class="flex items-center gap-4">
-                        <input type="radio" name="" id="">
-
-                        <label class="font-semibold text-sm" for="">Indomart</label>
-                    </div>
-                    <img src="./assets/img/indomart.png" alt="">
                 </div>
             </div>
         </div>
-        <!-- Pesanan -->
-        <div class="border border-slate-300 py-4 px-6 my-8">
-            <p class="font-semibold text-sm">Pesanan kamu</p>
-            <div class="flex justify-between items-center">
-                <p class="text-xs py-3">ID Pesanan</p>
-                <p class="font-semibold text-xs">#A37SDB61XVXZ13DR</p>
-            </div>
-            <div class="flex items-start gap-3">
-                <div class="flex gap-4">
-                    <img width="100" class="h-fit" src="./assets/img/produk3.png" alt="">
-                    <div class="flex flex-col gap-2">
-                        <p class="text-xs font-semibold">Adidas</p>
-                        <p class="font-bold text-xs">Yeezy Boost 350 V2 <br>"Beluga"</p>
-                        <p class="font-bold text-sm text-red-700">Rp480.000</p>
-                        <p class="text-sm">Warna : Black</p>
-                        <p class=" text-sm">Ukuran : 42</p>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-col gap-2 mt-2">
-                <div class="flex justify-between">
-                    <p class="text-sm text-slate-500">Subtotal Harga</p>
-                    <p class="text-sm font-semibold">Rp480.000</p>
-                </div>
-                <div class="flex justify-between">
-                    <p class="text-sm text-slate-500">Diskon</p>
-                    <p class="text-sm font-semibold">Rp0</p>
-                </div>
-                <div class="flex justify-between">
-                    <p class="text-sm text-slate-500">Pengiriman</p>
-                    <p class="text-sm font-semibold">Rp15.500</p>
-                </div>
-                <div class="flex justify-between">
-                    <p class="text-sm text-slate-500">Biaya lainya</p>
-                    <p class="text-sm font-semibold">Rp2000</p>
-                </div>
-                <hr class="w-full border border-gray-300 mt-2">
-                <div class="flex justify-between">
-                    <p class="text-sm text-slate-500">Total Pembayaran</p>
-                    <p class="text-sm font-semibold">Rp480.000</p>
-                </div>
-                <button class="bg-black text-white p-2 mt-4 w-full">Buat Pesanan</button>
-                <button class="border p-2  w-full">Kembali</button>
-            </div>
-        </div>
+
     </section>
 
-    <section class="py-8 px-6 bg-black text-white">
-        <div>
-            <h2 class="text-3xl font-bold pb-2">Luxora</h2>
-            <p class="font-semibold text-slate-500 text-sm">Upgrade Style, Elevate Confidence.</p>
-        </div>
-        <div class="text-sm flex flex-col gap-4 pt-8">
-            <p>Newsletter</p>
-            <p class="text-slate-500">Dapatkan pemberitahuan diskon dari kami!</p>
-            <form action="">
-                <input type="text" placeholder="Masukkan email anda" class="w-full border border-gray-500 p-2">
-                <button class="bg-white text-black p-2 mt-8 font-semibold px-6">Subscribe</button>
-            </form>
-        </div>
-        <div class="flex justify-between py-8 text-sm">
-            <div class="flex flex-col gap-4">
-                <p class="font-semibold text-sm"><a href="">Kategori</a></p>
-                <p class="text-slate-500"><a href="">Pria</a></p>
-                <p class="text-slate-500"><a href="">Wanita</a></p>
-                <p class="text-slate-500"><a href="">Anak</a></p>
+    <section class="py-8 px-6 bg-black text-white lg:px-16">
+        <div class="lg:flex lg:justify-between">
+            <div>
+                <div>
+                    <h2 class="text-3xl font-bold pb-2">Luxora</h2>
+                    <p class="font-semibold text-slate-500 text-sm">Upgrade Style, Elevate Confidence.</p>
+                </div>
+                <div class="text-sm flex flex-col gap-4 pt-8">
+                    <p>Newsletter</p>
+                    <p class="text-slate-500">Dapatkan pemberitahuan diskon dari kami!</p>
+                    <form action="" class="lg:block">
+                        <input type="text" placeholder="Masukkan email anda" class="w-full border border-gray-500 p-2">
+                        <button class="bg-white text-black p-2 mt-8 font-semibold px-6">Subscribe</button>
+                    </form>
+                </div>
             </div>
-            <div class="flex flex-col gap-4">
-                <p class="font-semibold text-sm"><a href="">Koleksi</a></p>
-                <p class="text-slate-500"><a href="">Rekomendasi</a></p>
-                <p class="text-slate-500"><a href="">Pakaian</a></p>
-                <p class="text-slate-500"><a href="">Sepatu</a></p>
-                <p class="text-slate-500"><a href="">Aksesoris</a></p>
-            </div>
-            <div class="flex flex-col gap-4">
-                <p class="font-semibold text-sm"><a href="">Ikuti Kami</a></p>
-                <p class="text-slate-500"><a href="">Instagram</a></p>
-                <p class="text-slate-500"><a href="">Facebook</a></p>
-                <p class="text-slate-500"><a href="">Youtube</a></p>
-                <p class="text-slate-500"><a href="">Tiktok</a></p>
+            <div class="flex justify-between py-8 text-sm lg:text-base lg:w-[700px]">
+                <div class="flex flex-col gap-4">
+                    <p class="font-semibold text-sm"><a href="">Kategori</a></p>
+                    <p class="text-slate-500"><a href="">Pria</a></p>
+                    <p class="text-slate-500"><a href="">Wanita</a></p>
+                    <p class="text-slate-500"><a href="">Anak</a></p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <p class="font-semibold text-sm"><a href="">Koleksi</a></p>
+                    <p class="text-slate-500"><a href="">Rekomendasi</a></p>
+                    <p class="text-slate-500"><a href="">Pakaian</a></p>
+                    <p class="text-slate-500"><a href="">Sepatu</a></p>
+                    <p class="text-slate-500"><a href="">Aksesoris</a></p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <p class="font-semibold text-sm"><a href="">Ikuti Kami</a></p>
+                    <p class="text-slate-500"><a href="">Instagram</a></p>
+                    <p class="text-slate-500"><a href="">Facebook</a></p>
+                    <p class="text-slate-500"><a href="">Youtube</a></p>
+                    <p class="text-slate-500"><a href="">Tiktok</a></p>
+                </div>
             </div>
         </div>
-        <hr class="w-full border border-gray-500">
-        <div class="flex flex-col text-slate-500 gap-4 pt-4 text-sm">
-            <p>Terms & Conditions</p>
-            <p>Privacy Policy</p>
-            <p>Cookie Policy</p>
+        <hr class="w-full border border-gray-500 lg:my-6">
+        <div class="lg:flex lg:justify-between lg:items-center">
+            <div class="flex flex-col text-slate-500 gap-4 lg:gap-6 pt-4 text-sm lg:flex-row order-1 lg:order-2">
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+                <p>Cookie Policy</p>
+            </div>
+            <footer class="text-sm text-slate-500 pt-8 order-2 lg:order-1">
+                <p>©2025 Luxora, All Rights Reserved</p>
+            </footer>
         </div>
-        <footer class="text-sm text-slate-500 pt-8">
-            <p>©2025 Luxora, All Rights Reserved</p>
-        </footer>
     </section>
 
     <script src="../index.js"></script>
